@@ -14,7 +14,34 @@
  *= require_self
  */
 @import "bootstrap";
-a.navbar-brand
+.container-fluid
 {
-  color: red !important;
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* navabr */
+a.btn-warning {
+  color: #fff;
+  background-color: #BB371A;
+  border-color: #BB371A;
+}
+
+.bg-dark.text-secondary.px-4.py-5.text-center {
+  background-color: #fff !important;
+  padding-top: 1rem !important;
+}
+h1.display-5.fw-bold.text-white
+{
+    color: black !important;
+}
+p.fs-5.mb-4
+{
+    color: black !important;
+}
+.pt-5, .py-5
+{
+    padding-top: 1rem !important;
 }
