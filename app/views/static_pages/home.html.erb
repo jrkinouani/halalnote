@@ -35,7 +35,7 @@
                           </div>
                           <!--<a href="forum_post.html" class="forum-item-title">General Discussion</a>-->
                       </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <!--<a href="forum_post.html" class="forum-item-title">General Discussion</a>-->
                             <%= restaurant.name %>
                             <div class="forum-sub-title"><%= restaurant.city %></div>
@@ -74,10 +74,11 @@
                         </div>
                         <div class="col-md-1 ">
                             <span class="views-number">
-                                140
+
                             </span>
+                          <!--<%=  @amount = restaurant.host + restaurant.decor + restaurant.taste + restaurant.price%>-->
                             <div>
-                                <small>Posts</small>
+                                <%= @amount %>
                             </div>
                         </div>
                         </div>

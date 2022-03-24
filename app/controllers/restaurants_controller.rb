@@ -21,8 +21,9 @@ class RestaurantsController < ApplicationController
 
   # POST /restaurants or /restaurants.json
   def create
-    @restaurant = Restaurant.new(restaurant_params)
-
+    @restaurant = Restaurant.new(restaurant_params
+      #amount = @restaurant.host + @restaurant.price + @restaurant.taste + @restaurant.decor
+      #amount = @restaurant.total
     respond_to do |format|
       if @restaurant.save
         format.html { redirect_to restaurant_url(@restaurant), notice: "Restaurant was successfully created." }
@@ -57,6 +58,7 @@ class RestaurantsController < ApplicationController
     end
   end
 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_restaurant
@@ -65,6 +67,6 @@ class RestaurantsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :city, :price, :taste, :decor, :host)
+      params.require(:restaurant).permit(:name, :city, :price, :taste, :decor, :host, :total)
     end
 end
