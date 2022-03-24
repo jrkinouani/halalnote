@@ -1,12 +1,90 @@
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-      <div class="py-5">
-        <h1 class="display-5 fw-bold text-white">Découvrez des restos halal <br>qui le méritent</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">Nous établisons grâce à vos notes, sur des critères bien définis, un classement des meilleures restaurants halal</p>
-          <!--<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-            <button type="button" class="btn btn-outline-primary btn-lg px-4">Secondary</button>
-          </div>-->
-        </div>
-      </div>
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+  <div class="py-5">
+    <h1 class="display-5 fw-bold text-white">Découvrez des restos halal <br>qui le méritent</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Nous établisons grâce à vos notes, sur des critères bien définis,
+          un classement des meilleures restaurants halal
+        </p>
     </div>
+  </div>
+</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container home">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+
+            <!--<div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-globe text-navy mid-icon"></i>
+                    </div>
+                    <h2>Welcome to our forum</h2>
+                    <span>Feel free to choose topic you're interested in.</span>
+                </div>
+            </div>-->
+
+            <div class="ibox-content forum-container">
+                <div class="forum-item active">
+                      <% @restaurants.each do |restaurant| %>
+                      <div class="row home">
+                      <div class="col-md-1">
+                          <div class="pull-left m-r-md">
+                            <i class="fa fa-globe text-navy mid-icon"></i>
+                          </div>
+                          <!--<a href="forum_post.html" class="forum-item-title">General Discussion</a>-->
+                      </div>
+                        <div class="col-md-6">
+                            <!--<a href="forum_post.html" class="forum-item-title">General Discussion</a>-->
+                            <%= restaurant.name %>
+                            <div class="forum-sub-title"><%= restaurant.city %></div>
+                        </div>
+                        <div class="col-md-1 ">
+                            <span class="views-number">
+                                <%= restaurant.price %>
+                            </span>
+                            <div>
+                                <small>Views</small>
+                            </div>
+                        </div>
+                        <div class="col-md-1 ">
+                            <span class="views-number">
+                              <%= restaurant.taste %>
+                            </span>
+                            <div>
+                                <small>Topics</small>
+                            </div>
+                        </div>
+                        <div class="col-md-1 ">
+                            <span class="views-number">
+                                <%= restaurant.decor %>
+                            </span>
+                            <div>
+                                <small>Posts</small>
+                            </div>
+                        </div>
+                        <div class="col-md-1 ">
+                            <span class="views-number">
+                                <%= restaurant.host %>
+                            </span>
+                            <div>
+                                <small>Posts</small>
+                            </div>
+                        </div>
+                        <div class="col-md-1 ">
+                            <span class="views-number">
+                                140
+                            </span>
+                            <div>
+                                <small>Posts</small>
+                            </div>
+                        </div>
+                        </div>
+                      <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
