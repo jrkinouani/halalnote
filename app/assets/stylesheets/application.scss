@@ -23,6 +23,13 @@
     margin-left: auto;
 }
 /* navbar */
+.navbar-brand {
+     float: left;
+     padding: 5px 5px;
+     font-size: 80px;
+     line-height: 20px;
+     height: 80px;
+ }
 input.btn.ml-2.btn-warning
 {
     color: #fff;
@@ -207,4 +214,10 @@ p.fs-5.mb-4
 
 .ourTeam .i .c:hover .more {
     bottom: 0
+}
+/*page about */
+
+h1.card-title
+{
+   font-size: 4.5rem;
 }
