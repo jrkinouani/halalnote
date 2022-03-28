@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ //= require material_icons
  */
 @import "bootstrap";
 .container-fluid
@@ -22,13 +23,16 @@
     margin-right: auto;
     margin-left: auto;
 }
+a {
+  background-color: transparent !important;
+}
 /* navbar */
 .navbar-brand {
      float: left;
      padding: 5px 5px;
      font-size: 80px;
      line-height: 20px;
-     height: 80px;
+     height: 60px;
  }
 input.btn.ml-2.btn-warning
 {
@@ -229,4 +233,37 @@ p.fs-5.mb-4
 h1.card-title
 {
    font-size: 4.5rem;
+}
+/* page show restaurant */
+.jumbotron {
+  padding: 6rem 2rem !important;
+}
+.jumbotron.show {
+  padding: 2rem 2rem!important;
+}
+.jumbotron-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px !important;
+}
+h2.mb-4
+{
+    text-align: center;
+    font-size: 40px;
+}
+h4.name_city
+{
+    text-align: center;
+    font-weight: 100;
+}
+i.fa-solid.fa-money-bill-1-wave
+{
+    height: 30%;
+    width: 30%;
+}
+h3.title_score
+{
+    text-align: center;
+    margin-bottom: 20px;
 }

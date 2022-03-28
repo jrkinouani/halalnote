@@ -1,3 +1,49 @@
+<div class="container py-5">
+    <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url(/food.jpg);">
+      <h2 class="mb-4">
+          <%= @restaurant.name %>
+      </h2>
+      <H4 class="name_city">
+          <%= @restaurant.city %>
+      </h4>
+      <!--<a href="https://bootstrapious.com/snippets" class="btn btn-primary">More Bootstrap Snippets</a>-->
+    </div>
+
+    <div class="jumbotron show">
+      <div class="row">
+        <h3 class="title_score">Le score du restaurant</h3>
+        <div class="col-md-6">
+          <p>
+            <i class="material-icons">payment </i> <strong>Prix:</strong>
+            <%= @restaurant.price %>
+          </p>
+
+          <p>
+            <strong>Qualité:</strong>
+            <%= @restaurant.taste %>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            <strong>Décor:</strong>
+            <%= @restaurant.decor %>
+          </p>
+
+          <p>
+            <strong>Accueil:</strong>
+            <%= @restaurant.host %>
+          </p>
+
+          <p>
+            <strong>Certification:</strong>
+            <%= @restaurant.certificate %>
+          </p>
+          <p><i class="fa-solid fa-money-bill-1-wave"></i></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 <p id="notice"><%= notice %></p>
 
 <p>
