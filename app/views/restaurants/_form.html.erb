@@ -40,6 +40,11 @@
     <%= form.label :host %>
     <%= form.number_field :host %>
   </div>
+  <div class="field">
+    <%= form.label :certificate %>
+    <%= form.select :certificate, [["AVS"], ["HMC"], ["ACHAHADA"], ["AUTRE"], ["FAIT MAISON"]], selected: "CHI" %>
+
+  </div>
 
   <div class="actions">
     <%= form.submit %>

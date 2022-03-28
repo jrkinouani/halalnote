@@ -18,7 +18,7 @@
 				<div class="wrap">
 					<img src="/food.jpg" alt="#" width="370" height="270" class="img-responsive">
 					<div class="info">
-						<h3 class="name"><%= restaurant.name %></h3>
+						<h3 class="name"><%= restaurant.name%></h3>
 						<h4 class="position"><%= restaurant.city%></h4>
 					</div>
 				</div>
@@ -26,7 +26,7 @@
           <div class="row">
           <div class="col-md-12 ">
               <span class="views-number">
-                  <%= restaurant.price %>
+                  <%= restaurant.price %> / 5
               </span>
               <div>
                   <small>Views</small>
@@ -34,7 +34,7 @@
           </div>
           <div class="col-md-12 ">
               <span class="views-number">
-                <%= restaurant.taste %>
+                <%= restaurant.taste %>  / 5
               </span>
               <div>
                   <small>Topics</small>
@@ -42,7 +42,7 @@
           </div>
           <div class="col-md-12 ">
               <span class="views-number">
-                  <%= restaurant.decor %>
+                  <%= restaurant.decor %>  / 5
               </span>
               <div>
                   <small>Posts</small>
@@ -50,7 +50,16 @@
           </div>
           <div class="col-md-12 ">
               <span class="views-number">
-                  <%= restaurant.host %>
+                  <%= restaurant.host %>  / 5
+              </span>
+              <div>
+                  <small>Posts</small>
+                  <%= link_to 'Show', restaurant %>
+              </div>
+          </div>
+          <div class="col-md-12 ">
+              <span class="views-number">
+                  Certification: <%= restaurant.certificate %> 
               </span>
               <div>
                   <small>Posts</small>
