@@ -8,14 +8,14 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container home">
 <div class="section ourTeam">
 	<div class="row">
     <% @restaurants.each do |restaurant| %>
-		<div class="col-xs-6 col-sm-4 col-md-3 i">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 i">
 			<div class="c text-center">
 				<div class="wrap">
-					<img src="/food.jpg" alt="#" width="370" height="270" class="img-responsive">
+					<img src="/food.jpg" alt="#"  class="img-responsive">
 					<div class="info">
 						<h3 class="name"><%= restaurant.name%></h3>
 						<h4 class="position"><%= restaurant.city%></h4>
@@ -25,7 +25,8 @@
           <div class="row">
           <div class="col-md-12 ">
               <span class="views-number">
-                  <%= restaurant.price %> / 5
+
+                  <%= restaurant.price %>
               </span>
               <div>
                   <small>Views</small>
