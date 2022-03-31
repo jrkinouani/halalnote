@@ -23,6 +23,7 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(restaurant_params)
     respond_to do |format|
+      @restaurant.total = @restaurant.price + @restaurant.host + @restaurant.decor + @restaurant.taste
       if @restaurant.save
         format.html { redirect_to restaurant_url(@restaurant), notice: "Restaurant was successfully created." }
         format.json { render :show, status: :created, location: @restaurant }

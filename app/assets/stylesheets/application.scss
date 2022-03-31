@@ -17,7 +17,7 @@
 @import "bootstrap";
 body, html
 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .container-fluid
 {
@@ -52,7 +52,8 @@ input.btn.ml-2.btn-warning
 
 .bg-dark.text-secondary.px-4.py-5.text-center {
     background-color: #fff !important;
-    padding-top: 1rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 nav.navbar-expand-lg.navbar-dark.bg-dark {
   background-color:#C32F27 !important;
@@ -71,11 +72,16 @@ p.fs-5.mb-4
 {
     color: black !important;
 }
-.pt-5, .py-5
+.pt-5,
 {
-    padding-top: 1rem !important;
+    padding-top: 0rem !important;
 }
-
+.py-5 {
+  padding-bottom: 0rem !important;
+}
+.pb-5 {
+  padding-bottom: 0rem !important;
+}
 /*************************/
 
 .ourTeam h2 {
@@ -88,7 +94,7 @@ p.fs-5.mb-4
 }
 
 .ourTeam .i .c {
-    background: #fff;
+    background: #FAEEE7;
     -webkit-box-shadow: 0 4px 0 #2b86ac;
     -moz-box-shadow: 0 4px 0 #2b86ac;
     box-shadow: 0 4px 0 #2b86ac;
@@ -187,42 +193,6 @@ p.fs-5.mb-4
     box-shadow: 0 3px 0 rgba(0, 0, 0, .1)
 }
 
-.ourTeam .i .c .more .socials a:first-child {
-    margin: 0
-}
-
-.ourTeam .i .c .more .socials a.facebook {
-    background: #3262b9
-}
-
-.ourTeam .i .c .more .socials a.facebook:hover {
-    background: #2d57a5
-}
-
-.ourTeam .i .c .more .socials a.twitter {
-    background: #3dd7e5
-}
-
-.ourTeam .i .c .more .socials a.twitter:hover {
-    background: #27d2e2
-}
-
-.ourTeam .i .c .more .socials a.google-plus {
-    background: #e23535
-}
-
-.ourTeam .i .c .more .socials a.google-plus:hover {
-    background: #de2020
-}
-
-.ourTeam .i .c .more .socials a.linkedin {
-    background: #069
-}
-
-.ourTeam .i .c .more .socials a.linkedin:hover {
-    background: #005580
-}
-
 .ourTeam .i .c:hover img {
     -moz-opacity: 0;
     -khtml-opacity: 0;
@@ -236,6 +206,17 @@ p.fs-5.mb-4
 
 .ourTeam .i .c:hover .more {
     bottom: 0
+}
+p.fs-5.mb-4
+{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+h3.position
+{
+    font-size: 16px;
+    text-decoration: underline 3px;
 }
 /*page about */
 
@@ -260,6 +241,7 @@ h2.mb-4
 {
     text-align: center;
     font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 h4.name_city
 {
@@ -275,6 +257,10 @@ h3.title_score
 {
     text-align: center;
     margin-bottom: 20px;
+}
+.col-md-9.star
+{
+    text-align: left;
 }
 /***********page about *///
 h2.title_main

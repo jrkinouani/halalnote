@@ -41,6 +41,10 @@
     <%= form.number_field :host %>
   </div>
   <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :total %>
+  </div>
+  <div class="field">
     <%= form.label :certificate %>
     <%= form.select :certificate, [["AVS"], ["HMC"], ["ACHAHADA"], ["AUTRE"], ["FAIT MAISON"]], selected: "CHI" %>
 

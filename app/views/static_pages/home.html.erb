@@ -2,7 +2,8 @@
   <div class="py-5">
     <h1 class="display-5 fw-bold text-white">Découvrez des restos halal <br>qui le méritent</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-4">
+        <p class="fs-5 mb-4">Des restos classés,
+           testés et validés, pour ceux qui ne veulent plus faire de compromis sur ce qu'ils mangent et où ils mangent.
         </p>
     </div>
   </div>
@@ -11,21 +12,26 @@
 <div class="container home">
 <div class="section ourTeam">
 	<div class="row">
-    <% @restaurants.each do |restaurant| %>
+    <% position = 1; @restaurants.each do |restaurant| %>
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 i">
 			<div class="c text-center">
+        <h3 class="position"><%= position %></h3>
+        <% position = position + 1 %>
 				<div class="wrap">
-					<img src="/food.jpg" alt="#"  class="img-responsive">
+					<img src="/pizzazino.jpg" alt="#"  class="img-responsive" >
 					<div class="info">
-						<h3 class="name"><%= restaurant.name%></h3>
-						<h4 class="position"><%= restaurant.city%></h4>
+
+						<h3 class="name"><%= restaurant.name %></h3>
+						<h4 class="position"><%= restaurant.city.capitalize %></h4>
 					</div>
 				</div>
 				<div class="more">
           <div class="row">
-          <div class="col-md-12 ">
-              <span class="views-number">
-                <small>Prix</small> :
+              <div class="col-md-2 ">
+                <span class="views-number"></span>
+                <small>Prix:</small>
+              </div>
+              <div class="col-md-9 star">
                   <%=  restaurant.price.times  do %>
                     <%  if restaurant.price >= 4 %>
                     <span class="material-icons" style="color: #2bde73">star_rate</span>
@@ -35,11 +41,12 @@
                     <span class="material-icons" style="color: red ">star_rate</span>
                     <%end%>
                   <% end %>
-              </span>
-          </div>
-          <div class="col-md-12 ">
-              <span class="views-number">
+                </div>
+            <div class="col-md-2 ">
+                <span class="views-number"></span>
                 <small>Qualité</small>
+            </div>
+              <div class="col-md-9 star">
                   <%= restaurant.taste.times  do %>
                   <%  if restaurant.taste >= 4 %>
                   <span class="material-icons" style="color: #2bde73">star_rate</span>
@@ -49,11 +56,12 @@
                   <span class="material-icons" style="color: red ">star_rate</span>
                   <%end%>
                   <% end %>
-              </span>
-          </div>
-          <div class="col-md-12 ">
-              <span class="views-number">
+               </div>
+           <div class="col-md-2 ">
+              <span class="views-number"></span>
                 <small>Décor</small>
+            </div>
+            <div class="col-md-9 star">
                 <%= restaurant.decor.times  do %>
                 <%  if restaurant.decor >= 4 %>
                 <span class="material-icons" style="color: #2bde73">star_rate</span>
@@ -63,11 +71,12 @@
                 <span class="material-icons" style="color: red ">star_rate</span>
                 <%end%>
                   <% end %>
-              </span>
-          </div>
-          <div class="col-md-12 ">
-              <span class="views-number">
+             </div>
+          <div class="col-md-2 ">
+              <span class="views-number"></span>
                 <small>Accueil</small>
+          </div>
+          <div class="col-md-9 star">
                 <%= restaurant.host.times  do %>
                 <%  if restaurant.host = 4 %>
                 <span class="material-icons" style="color: #2bde73">star_rate</span>
@@ -77,13 +86,13 @@
                 <span class="material-icons" style="color: red ">star_rate</span>
                 <%end%>
                 <% end%>
-              </span>
           </div>
-          <div class="col-md-12 ">
-              <span class="views-number">
+          <div class="col-md-3 ">
+              <span class="views-number"></span>
                 <small>Certification</small>
+          </div>
+          <div class="col-md-6 ">
                   <%=  restaurant.certificate %>
-              </span>
           </div>
           <div class="col-md-12 ">
               <span class="views-number">
