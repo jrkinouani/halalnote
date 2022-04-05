@@ -18,7 +18,12 @@
         <h3 class="position"><%= position %></h3>
         <% position = position + 1 %>
 				<div class="wrap">
-					<img src="/pizzazino.jpg" alt="#"  class="img-responsive" >
+          <% if restaurant.cover_url %>
+              <%= image_tag(restaurant.cover_url ,class:"img-responsive") %>
+              <% else %>
+              <img src="/food.jpg" alt="#"  class="img-responsive" >
+           <% end %>
+					<!--<img src="/pizzazino.jpg" alt="#"  class="img-responsive" >-->
 					<div class="info">
 
 						<h3 class="name"><%= restaurant.name %></h3>
