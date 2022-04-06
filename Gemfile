@@ -26,6 +26,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'rmagick'
 gem 'fog'
 gem "fog-aws"
+gem 'rack-timeout', '0.3.2'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
