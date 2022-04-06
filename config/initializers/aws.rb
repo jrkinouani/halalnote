@@ -9,7 +9,7 @@ CarrierWave.configure do |config|
 
     }
 
-    config.fog_directory  = 'halalnotes'
+    config.fog_directory  = 'halalnote'
     config.fog_public     = false
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
 end
