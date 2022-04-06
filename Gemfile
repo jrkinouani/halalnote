@@ -24,7 +24,6 @@ gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 gem 'material_icons'# Use Redis adapter to run Action Cable in production
 gem 'carrierwave', '~> 1.0'
 gem 'rmagick'
-#gem 'fog'
 gem "fog-aws"
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
