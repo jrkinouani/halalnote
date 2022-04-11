@@ -1,11 +1,5 @@
 <div class="container py-5">
-    <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url(/food.jpg);">
-
-      <!--<% if @restaurant.cover_url %>
-          <%= image_tag(@restaurant.cover_url ,class:"img-responsive") %>
-          <% else %>
-          <img src="/pizzazino.jpg" alt="#"  class="img-responsive" >
-       <% end %>-->
+    <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url(<%= @restaurant.cover_url %>);">
 
       <h2 class="mb-4">
           <%= @restaurant.name.capitalize %>

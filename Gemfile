@@ -25,6 +25,7 @@ gem 'material_icons'# Use Redis adapter to run Action Cable in production
 gem 'carrierwave', '~> 1.0'
 gem 'rmagick'
 gem "fog-aws"
+
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -62,6 +63,7 @@ group :test do
 end
 
 group :production do
+  gem "fog-aws"
    gem 'pg'
   gem 'rails_12factor'
   gem "rake", "~> 13.0"
