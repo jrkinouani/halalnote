@@ -19,8 +19,8 @@
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a href="#home">Score</a></li>
   <li><a href="#profile">Certification</a></li>
-  <li><a href="#messages">Messages</a></li>
-  <li><a href="#settings">Settings</a></li>
+  <li><a href="#messages">Photos</a></li>
+  <li><a href="#settings">Maps</a></li>
 </ul>
 </div>
 <div class="tab-content">
@@ -37,7 +37,7 @@
              <small>Prix</small>
          </div>
          <div class="col-md-6">
-             <%= @restaurant.price.times  do %>
+             <% @restaurant.price.times  do %>
              <%  if @restaurant.price >= 4 %>
              <span class="material-icons" style="color: #2bde73">star_rate</span>
              <% elsif @restaurant.price == 3 %>
@@ -52,7 +52,7 @@
                <small>Qualité</small>
            </div>
            <div class="col-md-6">
-               <%= @restaurant.taste.times  do %>
+               <% @restaurant.taste.times  do %>
                <%  if @restaurant.taste >= 4 %>
                <span class="material-icons" style="color: #2bde73">star_rate</span>
                <% elsif @restaurant.taste == 3 %>
@@ -69,7 +69,7 @@
              <small>Décor</small>
          </div>
          <div class="col-md-6">
-             <%= @restaurant.decor.times  do %>
+             <% @restaurant.decor.times  do %>
              <%  if @restaurant.decor >= 4 %>
              <span class="material-icons" style="color: #2bde73">star_rate</span>
              <% elsif @restaurant.decor == 3 %>
@@ -84,15 +84,15 @@
                <small>Accueil</small>
            </div>
            <div class="col-md-6">
-               <%= @restaurant.host.times  do %>
-               <%  if @restaurant.host >= 4 %>
-               <span class="material-icons" style="color: #2bde73">star_rate</span>
-               <% elsif @restaurant.host == 3 %>
-               <span class="material-icons" style="color: #ffc924">star_rate</span>
-               <% elsif @restaurant.host <= 2 %>
-               <span class="material-icons" style="color: red ">star_rate</span>
-               <%end%>
-                 <% end %>
+               <% @restaurant.host.times  do %>
+                 <%  if @restaurant.host >= 4 %>
+                 <span class="material-icons" style="color: #2bde73">star_rate</span>
+                 <% elsif @restaurant.host == 3 %>
+                 <span class="material-icons" style="color: #ffc924">star_rate</span>
+                 <% elsif @restaurant.host <= 2 %>
+                 <span class="material-icons" style="color: red ">star_rate</span>
+                 <%end%>
+               <% end %>
             </div>
          </div>
     </div>

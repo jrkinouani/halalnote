@@ -213,10 +213,24 @@ p.fs-5.mb-4
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
 }
-h3.position
+span.position
 {
     font-size: 16px;
+    padding-left: 10px;
     text-decoration: underline 3px;
+    float: left;
+}
+span.name
+{
+    font-size: 16px;
+    padding-right: 10px;
+    /*text-decoration: underline 3px;*/
+    float: right;
+}
+.col-md-12.voir
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 /*page about */
 
