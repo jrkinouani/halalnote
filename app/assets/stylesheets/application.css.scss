@@ -243,7 +243,7 @@ h1.card-title
   padding: 6rem 2rem !important;
 }
 .jumbotron.show {
-  padding: 2rem 2rem!important;
+  padding: 0rem 1rem!important;
 }
 .jumbotron-image {
     background-position: center center;
@@ -255,6 +255,15 @@ h1.card-title
 {
     height: 250px;
     width: 300px;
+}
+section.gallery
+{
+
+}
+.w-100 {
+  width: 100% !important;
+  border-radius: 8px;
+  height: 100%;
 }
 h2.mb-4
 {
@@ -285,6 +294,7 @@ div.scrollmenu {
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 div.scrollmenu a {

@@ -51,6 +51,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :Image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
     <%= form.label :certificate %>
     <%= form.select :certificate, [["AVS"], ["HMC"], ["ACHAHADA"], ["AUTRE"], ["FAIT MAISON"], ["VEGETARIEN"], ["VEGAN"]], selected: "CHI" %>
 
