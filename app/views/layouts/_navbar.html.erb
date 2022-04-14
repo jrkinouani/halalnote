@@ -10,14 +10,11 @@
       </form>-->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <%= link_to "About", static_pages_about_path, class: "nav-link" %><span class="sr-only">(current)</span>
+          <%= link_to "A propos", static_pages_about_path, class: "nav-link" %><span class="sr-only">(current)</span>
          <!--<a class="nav-link" href="static_pages_about">About <span class="sr-only">(current)</span></a>-->
         </li>
-      <li class="nav-item"><a class="nav-link" href="html-components.html"> Manifest </a></li>
-      <li class="nav-item">
        <!--<a class="btn ml-2 btn-warning" href="http://bootstrap-ecommerce.com">Ajouter une note</a></li>-->
       <%= button_to "Ajoutez un Resto", new_restaurant_path, class: "btn ml-2 btn-warning", :method => :get  %>
-      </li>
       </ul>
     </div>
 </nav>
