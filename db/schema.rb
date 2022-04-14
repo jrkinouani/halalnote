@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_13_093829) do
+ActiveRecord::Schema.define(version: 2022_04_14_154544) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2022_04_13_093829) do
     t.string "certificate"
     t.string "cover"
     t.string "image"
+    t.string "image1"
+    t.string "image2"
   end
 
 end
